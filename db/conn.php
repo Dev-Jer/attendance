@@ -1,8 +1,16 @@
 <?php 
-    $host = '127.0.0.1';
-    $db = 'attendace_db';
-    $user = 'root';
-    $pass = '';
+    //local development connection variables
+    //$host = '127.0.0.1';
+    //$db = 'attendace_db';
+    //$user = 'root';
+    //$pass = '';
+    //$charset = 'utf8mb4';
+
+    //Remote connection
+    $host = 'remotemysql.com';
+    $db = 'pjUA3csHl3';
+    $user = 'pjUA3csHl3';
+    $pass = '33de8zmwby';
     $charset = 'utf8mb4';
 
     $dsn = "mysql:host=$host;dbname=$db;charset=$charset";

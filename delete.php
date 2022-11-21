@@ -1,4 +1,5 @@
 <?php
+require_once 'auth_check.php';
 require_once 'db/conn.php';
 if(!$_GET['id']){
     //echo 'error';

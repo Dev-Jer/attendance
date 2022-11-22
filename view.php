@@ -2,7 +2,7 @@
 $title = 'View Record';
 
 require_once 'includes/header.php';
-require_once 'auth_check.php';
+require_once 'includes/auth_check.php';
 
 require_once 'db/conn.php';
 
@@ -14,6 +14,8 @@ if(!isset($_GET['id'])){
     $result = $crud->getAttendeeDetails($id);   
 
 ?>
+
+<img src="<?php echo empty($result['avatar_path']) ? "uploads/blank.png" : $result['avatar_path']; ?>"/>
 
 <div class="card" style="width: 18rem;">
             <div class="card-body">

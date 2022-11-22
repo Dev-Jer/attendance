@@ -50,7 +50,15 @@ $results = $crud->getSpecialties();
             <label for="phone" class="form-label">Contact Number</label>
             <input required type="text" class="form-control" id="phone" aria-describedby="phoneHelp" name="phone">
             <div id="phoneHelp" class="form-text">We'll never share your contact with anyone else.</div>
-        </div>        
+        </div>  
+
+        <div class="input-group mb-3">
+            <input type="file" accept="image/*" class="form-control" id="avatar">
+            <label class="input-group-text" for="avatar">Upload</label>
+        </div>
+
+        <div id="avatar" class="form-text text-success">File upload is optional.</div>
+        <br/>
 
         <button type="submit" name="submit" class="btn btn-primary">Submit</button>
 </form>
